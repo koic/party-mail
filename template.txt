@@ -1,0 +1,15 @@
+<%= title %>のご案内です。
+
+ * 日時: <%= date %> 乾杯
+ * 場所: <%= bar_name %> (<%= bar_url %>)
+ * 予算: <%= budget %>円
+ * 予約者名: <%= host %>
+ * 緊急連絡先 (<%= host %>携帯) : <%= contact_number %> / <%= contact_email %>
+ * 参加者: <%= entries %>
+
+当日は、<%= rendezvous_at_time %>に<%= rendezvous_point %>に集合をお願いします。
+
+  予約の都合上、万が一、キャンセル、または遅刻される場合は、
+  <%= deadline_for_cancel %>までに必ずご連絡ください。
+
+全員揃ってのスムーズな乾杯にご協力をお願いします。
