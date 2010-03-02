@@ -2,12 +2,15 @@
 
 require 'erb'
 require 'yaml'
+require 'time'
 
 def generate_text(data_path)
   data = YAML.load(File.read(data_path))
 
   title = data['title']
-  date = data['date']
+  t = Time.parse(data['date'])
+  days = %w(日 月 火 水 木 金 土)
+  date = t.strftime("%m月%d日") + "(#{days[t.wday]}) " + t.strftime("%H:%M")
   bar_name = data['bar_name']
   bar_url = data['bar_url']
   budget = data['budget']
@@ -20,4 +23,8 @@ def generate_text(data_path)
   deadline_for_cancel = data['deadline_for_cancel']
 
   ERB.new(File.read('template.txt')).result(binding)
+end
+
+if __FILE__ == $0
+  puts generate_text("data.yaml")
 end
