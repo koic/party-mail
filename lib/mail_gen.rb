@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-require 'erb'
+require 'haml'
 require 'yaml'
 require 'time'
 
@@ -22,7 +22,7 @@ def generate_text(data_path)
   rendezvous_point = data['rendezvous_point']
   deadline_for_cancel = data['deadline_for_cancel']
 
-  ERB.new(File.read('template.txt')).result(binding)
+  Haml::Engine.new(File.read('template.txt')).render(binding)
 end
 
 if __FILE__ == $0
