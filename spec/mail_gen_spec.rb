@@ -23,5 +23,5 @@ describe 'メール文の生成' do
 TEXT
   end
 
-  it { generate_text('data.yaml').should == @text }
+  it { generate_text('data.yaml.sample').should == @text }
 end
