@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-require 'mail_gen'
+require File.expand_path(File.dirname(__FILE__) + '/../lib/mail_gen')
 
 describe 'メール文の生成' do
   before(:each) do

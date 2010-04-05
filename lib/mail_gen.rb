@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+require 'rubygems'
 require 'haml'
 require 'yaml'
 require 'time'
@@ -26,5 +27,5 @@ def generate_text(data_path)
 end
 
 if __FILE__ == $0
-  puts generate_text("data.yaml")
+  print generate_text("data.yaml")
 end
