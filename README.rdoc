@@ -1,9 +1,11 @@
 = party-mail
 
-== DESCRIPTION:
 party-mail is mail text generator for alcoholic party.
-Lisence MIT.
 
-= INSTALL
+== INSTALL
 
- % bundle
+ $ bundle install
+
+== LICENCE
+
+MIT
