@@ -2,9 +2,8 @@
 
 require File.expand_path(File.dirname(__FILE__) + '/../lib/mail_gen')
 
-describe 'メール文の生成' do
-  before(:each) do
-    @text = <<TEXT
+describe 'generate_text' do
+  let(:text) { <<TEXT
 ボヤキ飲み会のご案内です。
 
  * 日時: 02月19日(金) 19:30 乾杯
@@ -21,7 +20,9 @@ describe 'メール文の生成' do
 
 全員揃ってのスムーズな乾杯にご協力をお願いします。
 TEXT
-  end
+  }
 
-  it { generate_text('data.yaml.sample').should == @text }
+  subject { generate_text('data.yaml.sample') }
+
+  it { should == text }
 end
