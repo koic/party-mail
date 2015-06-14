@@ -11,7 +11,7 @@ def generate_text(data_path)
   title = data['title']
   t = Time.parse(data['date'])
   days = %w(日 月 火 水 木 金 土)
-  date = t.strftime("%m月%d日") + "(#{days[t.wday]}) " + t.strftime("%H:%M")
+  date = t.strftime('%m月%d日') + "(#{days[t.wday]}) " + t.strftime('%H:%M')
   bar_name = data['bar_name']
   bar_url = data['bar_url']
   budget = data['budget']
@@ -27,5 +27,5 @@ def generate_text(data_path)
 end
 
 if __FILE__ == $0
-  print generate_text("data.yaml")
+  print generate_text('data.yaml')
 end
