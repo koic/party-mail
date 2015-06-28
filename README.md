@@ -8,6 +8,10 @@ party-mail is mail text generator for alcoholic party.
 $ bundle install
 ```
 
+## PRESENTATION DOCUMENT
+
+* The making of a story (Japanese text) ... http://www.slideshare.net/koic/igaiga-and-me
+
 ## LICENCE
 
 MIT
