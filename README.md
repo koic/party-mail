@@ -5,8 +5,16 @@ party-mail is mail text generator for alcoholic party.
 ## INSTALL
 
 ```
+$ git clone git@github.com:koic/party-mail.git
+$ cd party-mail
 $ bundle install
 ```
+
+## USAGE
+
+1. `cp data.yml.sample data.yml`
+2. Edit `data.yml`
+3. `ruby ./lib/mail_gen.rb`
 
 ## PRESENTATION DOCUMENT
 
