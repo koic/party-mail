@@ -20,10 +20,6 @@ $ bundle install
 
 * The making of a story (Japanese text) ... http://www.slideshare.net/koic/igaiga-and-me
 
-## LICENCE
-
-MIT
-
 ## Contributing
 
 1. Fork it
@@ -31,3 +27,7 @@ MIT
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+party-mail is released under the [MIT License](http://www.opensource.org/licenses/MIT).
