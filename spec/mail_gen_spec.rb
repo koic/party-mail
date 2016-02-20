@@ -1,3 +1,5 @@
+# -*- frozen-string-literal: true -*-
+
 require File.expand_path(File.dirname(__FILE__) + '/../lib/mail_gen')
 
 describe 'generate_text' do
