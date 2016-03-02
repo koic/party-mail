@@ -4,16 +4,16 @@ require File.expand_path(File.dirname(__FILE__) + '/../lib/mail_gen')
 
 describe 'generate_text' do
   let(:text) { <<TEXT
-ボヤキ飲み会のご案内です。
+CROSS をしのぶ会 w/ ursmのご案内です。
 
- * 日時: 02月19日(金) 19:30 乾杯
- * 場所: 立ち呑み処 ボヤキ (http://r.tabelog.com/tokyo/A1311/A131101/13105840/)
- * 予算: 2,500円
+ * 日時: 02月29日(月) 19:00 乾杯
+ * 場所: 肉のテーマパーク まる豚 (http://tabelog.com/tokyo/A1310/A131002/13086497/)
+ * 予算: 2,000円
  * 予約者名: koic
  * 緊急連絡先 (koic携帯) : 090-9999-9999 / nomarebu@example.com
- * 参加者: chibamem, ryhmrt, kunitoo
+ * 参加者: flada-auxv, hibariya, hrysd, kakutani, koic, kunitoo, mhirata, takkanm, tanaka51, ursm
 
-当日は、19:20に御徒町駅南口の改札前に集合をお願いします。
+当日は、19:00に神田駅北口の改札前に集合をお願いします。
 
   予約の都合上、万が一、キャンセル、または遅刻される場合は、
   当日16:00までに必ずご連絡ください。
