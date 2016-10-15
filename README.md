@@ -5,7 +5,7 @@ party-mail is mail text generator for alcoholic party.
 ## INSTALL
 
 ```
-$ git clone git@github.com:koic/party-mail.git
+$ git clone https://github.com/koic/party-mail
 $ cd party-mail
 $ bundle install
 ```
