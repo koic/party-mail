@@ -1,4 +1,4 @@
-# party-mail [![Build Status](https://travis-ci.org/koic/party-mail.svg)](https://travis-ci.org/koic/party-mail)
+# party-mail [![Build Status](https://travis-ci.org/koic/party-mail.svg)](https://travis-ci.org/koic/party-mail) [![git.legal](https://git.legal/projects/3153/badge.svg "Number of libraries approved")](https://git.legal/projects/3153)
 
 party-mail is mail text generator for alcoholic party.
 
