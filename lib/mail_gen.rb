@@ -23,7 +23,10 @@ def generate_text(data_path)
   rendezvous_point = data['rendezvous_point']
   deadline_for_cancel = data['deadline_for_cancel']
 
-  Haml::Engine.new(File.read('template.txt')).render(binding)
+  mail_text = Haml::Engine.new(File.read('template.txt')).render(binding)
+
+  # Workaround fix https://travis-ci.org/koic/party-mail/builds/226291753
+  Gem::Version.new(Haml::VERSION) >= Gem::Version.new('5.0.0') ? mail_text.chomp : mail_text
 end
 
 if __FILE__ == $0
