@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.3)
-    haml (5.0.2)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     rspec (3.6.0)
